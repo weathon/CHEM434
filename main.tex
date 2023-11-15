@@ -34,18 +34,29 @@ Lead has been known as a type of toxin and there is no known safe amount of lead
 
  However, it is not feasible to do blood or soil lead levels around every general aviation airport. 
  %THus/.. gangcaixiangsm wangjil   hexiamian UBCO youguankunduzkunyunzuibekuenx
- Another media report collected the Automatic Dependent Surveillance-Broadcast (ADS-B) data, which provides the tracking data of an aircraft's real-time information like location and altitude, and used the flight path and altitude to estimate lead exposure levels for the surrounding area. They mapped the flight frequency \cite{noauthor_you_2022}
+ Another media report collected the Automatic Dependent Surveillance-Broadcast (ADS-B) data, which provides the tracking data of an aircraft's real-time information like location and altitude, and used the flight path and altitude to estimate lead exposure levels for the surrounding area. They mapped the flight frequency with altitudes lower than 10,000 feet. \cite{noauthor_you_2022} However, this is a semi-quantitative analysis: it might be reasonably accurate in estimating relative lead contamination for different areas, but it cannot give a numeric result of the amount of lead exposure and thus it cannot estimate the actual risk from lead exposure. 
 
 Kelowna International Airport (CYLW) serves both commercial and general aviation airplanes. Although its location is remote from Kelowna downtown, it is not distanced from some residential neighbourhoods such as Glenmore Highland and Rutland (about 5km and 4km to the end of CYLW runway, respectively). Given Kelowna's growing population and potential growth in residential areas, the close proximity of the airport is a valid public health concern. Additionally, the end of its runway is only about 1km from the University of British Columbia Okanagan Campus (UBCO), which is a growing educational and research institution with many students and staff, and there are about 2000 students who live on campus\footnote{\url{https://ok.ubc.ca/about/facts-and-figures/}}. This also raised concerns about possible lead contamination around the campus.
+
+Another student project from UBCO analysis the soil sample around the airport and found that the highest soil lead level is $11.55\pm 1.38$ mg/Kg in Lake Country. \cite{student_report} Values between 10-50 ppm dose not have detrimental health effects. \cite{noauthor_lead_nodate} Although their study dose considered the flight directions (flights are usually taking off on the south side and landing on the north side), their geospatial resolution was low and did not combine with flight path data to analyze the effects of flight path on soil lead level. Additionally, they did not consider the effects of wind direction on lead distribution: although flights are taking off south bound, they usually take off against the wind, meaning the wind is blowing toward the north side and could carry the lead particles to the north side of the airport. \cite{student_report}
 
 In this study, we will collect the topsoil samples around the airport and analyze their lead level using ICP-MS. We will also collect the ADS-B data from the aircraft near CYLW from ADSB Exchange\cite{adsbexchange}. We will then analyze the geospatial and temporal correlation between the ADS-B data and lead level and determine if the topsoil lead level is higher under the flight paths or when flight activities are more frequent. 
 % can we also do airborn bisai biasiazuishbashouzhikunyunex
 \section{Statement of Purpose}
 Although leaded gasoline has been banned worldwide for on-road vehicles, it is still commonly used for small piston-engine powered general aviation (GA) aircraft. (The fuel commercial jets use is not leaded.) Previous study has shown that children near GA airports have elevated blood lead level.\cite{miranda_geospatial_2011} \cite{zahran_leaded_2023} \cite{mills_lead_2022} \cite{zahran_effect_2017} Kelowna International Airport is a busy airport that serves both GA and commercial aircraft. With the growing population in Kelowna and the UBCO campus, the lead emission from GA aircraft in this area is a public health concern. In this study, we aim to analyze the topsoil lead level around the Kelowna International Airport using ICP-MS (an elemental analysis technique) to determine if there is a lead exposure concern for people living nearby and students and staff of UBCO. We will also incorporate it with the ADS-B data near the airport, which will provide the location and altitude information of the aircraft. This allows us to find the geospatial and temporal relations between the aircraft's activities and topsoil lead level. The correlation could help us better understand how aviation activities affect soil lead levels and can help us build a model to predict soil lead levels using ADS-B data, providing an affordable alternative method for estimating soil lead levels compared to chemical analysis.
 \section{Methods}
-\subsection{Sample Collection And Analysis}
 \subsection{ADS-B Data Collection}
-We 
+There are many ASD-B data providers on the market. In this study, we used the Application Programming Interface (API) from ADSBExchange \cite{adsbexchange} to capture the location information. We will capture the adsb data in 8 one-week timespan. The data capturing starts at 7am on the first day of the week and ends at 10pm at the last day of the week. During the capture, we request the API such that all the aircraft within 50 nautical miles (about 92.6km) 
+
+We will log the data every 10 seconds 
+
+not all broacattst saw many times
+not all uses avgas but most
+sample image
+
+
+\subsection{Sample Collection And Analysis}
+
 \subsection{Data Analysis}
 \section{Schedule}
 \begin{center}
@@ -71,9 +82,9 @@ Repeat for 3rd and 4th week & Dec 15, 2023 & Dec 29, 2023\\
  \hline
 Data processing for first month& Jan 10, 2024& Jan 29, 2024\\
  \hline
- Repeat for 5th-8th week\footnote{Since in winter the GA trafic is lower, we wait till the weather become warmer to collect more samples} & March 1, 2024 & March 29, 2024\\
+ Repeat for 5th-8th week& Feb 1, 2024 & Feb 29, 2024\\
   \hline
-All data processing and finishing the project& April 1, 2024 & April 29, 2024\\
+All data processing and finishing the project& March 1, 2024 & March 29, 2024\\
 \hline
 \end{tabular}
 \end{center}
