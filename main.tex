@@ -2,16 +2,17 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage[letter,margin=1in]{geometry} % Adjust margins if needed
 \usepackage[utf8]{inputenc}
+\usepackage{url}
 \usepackage[
 backend=biber,
-style=alphabetic,
+style=nature,
 ]{biblatex}
 \addbibresource{references.bib}
 
 \begin{document}
 
 \begin{center}
-    \Large{\textbf{A Geospatial Analysis of Lead Pollution From Piston Aircrafts Near Kelowna International Airport Using ADS-ICP-MS with ADS-B Data}}\\
+    \Large{\textbf{A Geospatial and Temporal Analysis of Lead Pollution From Piston Aircrafts Near Kelowna International Airport Using ICP-MS with ADS-B Data}}\\
     \vspace{1cm}
     \large{Wenqi Guo}\\
     \vspace{0.5cm}
@@ -27,12 +28,18 @@ style=alphabetic,
 \newpage
 
 \section{Introduction and Background}
-\indent Lead has been known as a type of toxitien and there is not known safe amount of lead: even small amount of lead could lead to health issues, such as decreased IQ in childrean, high blood pressure, cardiovascular problems and kidney damage. \cite{world_health_organization_lead_2023} Althogh leaded gasoline has been banned to use in on-road vechiels in the world, it is still used in many piston-engine powered small general avation aircrafts as 100LL (100 Low Lead), which has a lead concertration of about 0.56g/L. 
+Lead has been known as a type of toxitien and there is not known safe amount of lead: even small amount of lead could lead to health issues, such as decreased IQ in childrean, high blood pressure, cardiovascular problems and kidney damage. \cite{world_health_organization_lead_2023} Althogh leaded gasoline has been banned to use in on-road vechiels in the world, it is still used in many piston-engine powered small general avation aircrafts as 100LL (100 Low Lead), which contain tetraethyllead (TEL) and has a lead concertration of about 0.56g/L. 
 \cite{noauthor_safety_2021} Pervious study has shown that childrean near general avation airports has elevated blood lead level (BLL). \cite{miranda_geospatial_2011} \cite{zahran_leaded_2023} \cite{mills_lead_2022} \cite{zahran_effect_2017} Additionally, the United States Environmental Protection Agency has very recently issued a determination that lead emission from position engine aircrafts cause or contribute to air polution, giving reasonable anticipation that it may endanger public health and welfare.  \cite{us_epa_epa_2023} 
 % duzihlkouke rewrites
 
-Kelowna International Airport (CYLW) serves both commercial and general avation airplanes. Although its location is remote from Kelowna downtown, the end of its runway is only about 1km to the University of British Columbia Okanagan Campus (UBCO), which is a growing educational and research institution with many students and staffs. This raise the concern about possible lead contamination around the campus and it is a public health concern.  
+Kelowna International Airport (CYLW) serves both commercial and general avation airplanes. Although its location is remote from Kelowna downtown, it is not distanced from some residential neighborhood such as Glenmore Highland and Rutland (about 5km and 4km to the end of CYLW runway, respectively). Given the growing population in Kelowna and protential grow in residential areas, the close proximity of the airport is a valid public health concern. Additionally, the end of its runway is only about 1km to the University of British Columbia Okanagan Campus (UBCO), which is a growing educational and research institution with many students and staffs, and there are about 2000 students who live on campus\footnote{\url{https://ok.ubc.ca/about/facts-and-figures/}}. This also raised the concern about possible lead contamination around the campus.
+
+In this study, we will collect the topsoil samples around the airport and analyze their lead level using ICP-MS. We will also collect the Automatic Dependent Surveillance–Broadcast (ADS-B) data from the aircrafts near CYLW from ADSB Exchange\cite{adsbexchange}, which 
+% not two sentence 
+provides the tracking data of an aircraft's real-time information like location and altitude. We will then analyze the correlation between these data and determine if topsoil lead level is higher under the flight paths or when flight activities is more frequent. 
+% can we also do airborn bisai biasiazuishbashouzhikunyunex
 \section{Statement of Purpose}
+Although leaded gasoline has been banned around the world for on-road vehicles, it is still commonly used for small piston-engine powered general avation (GA) aircrafts. (The fuel commercial jets use is not leaded) Pervious study has shown that childrean near GA airports has elevated blood lead level. Kelowna International Airport is a busy airport that serves for both GA and comerical aircrafts. And with the growing population in Kelowna and UBCO campus, the lead emission from GA aircrafts in this area is a public health concern. In this study, we aim to to detect the topsoil lead level around the Kelowna INternational airport using ICP-MS (an elemental analysis techquies). We will also analyze the ADS-B data near the airport, which will provide the location and altitude information of the aircrafts. We will try to find the geospatial and temporal relations between the aircrafts  
 \section{Methods}
 \subsection{Sample Collection And Analysis}
 \subsection{ADS-B Data Collection}
