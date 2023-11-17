@@ -78,29 +78,34 @@ After capturing the data, we filter out flights with altitudes higher than 5000 
 This data will provide general information about the air traffic. However, not all aircraft broadcast their ADS information, especially small aircraft. At the same time, not all piston engines use 100LL. They could use unleaded gas or jet fuel. Thus, there might be some error between information from ADS-B and real leaded-gas-powered aircraft traffic. 
 
 \subsection{Sample Collection And Analysis}
-Since usually the airways are fixed and the flight paths would not deviate far from time, we will decide the sampling locations based on the flight path collected in the first week. We will collect the soil sample at locations at the busiest flight paths near the UBCO campus and 2 locations upwind and downwind of the location. At each location, we will collect 3 topsoil samples.  
+Since usually the airways are fixed and the flight paths would not deviate far from time, we will decide the sampling locations based on the flight path collected in the first week. We will collect the top soil sample at locations at the busiest flight paths near the UBCO campus and 2 locations upwind and downwind of the location. At each location, we will collect 3 topsoil samples. The location where the first sample was taken is recorded and the following sampling location should be as close to the first location as possible. 
 
-After the soil sample is collected
+After the soil sample is collected, it will be digested with heat and acid with one of the methods in  \cite{moor_determination_2001}. Since handling hydrofluoric acid is dangerous, we decided to use the method with aqua regia, despite it having worse accuracy. The soil is dried at 105 degrees for 3h, and then 0.5g of each sample is weighed and placed in a beaker. It is heated with 12mL of aqua regia for 45 min, then evaporated to almost dryness. 2.5mL of concentrated hydrochloric acid and 2.5 mL of H2O2 were then added and the solution was accurately diluted to 50mL with water. \cite{moor_determination_2001} Then the solution was tested using ICP-AES. We average the results for samples from the same location. 
 
-
-For air samples, we will use methods that are similar to \cite{gharaibeh_determination_2010} and \cite{vijayanand_assessment_2008}. Three high-volume air samplers will be respectively placed in an upwind location of the flight path, underneath the flight path, and in a downwind direction of the flight path. They will collect the air sample at the same time. New filters will be replaced every 2 hours. The whole collection will last about 8 hours and at least 5 position aircraft flyby occurs. 
-
-After the air sample is collected, we will use methods similar in \cite{gharaibeh_determination_2010} to digest the samples. A portion of each filter will be cut down into small pieces and placed in a beaker. Three digestion and rinsing will be applied to the sample. Reagents in each step are shown in \textbf{Table} \ref{tab:steps}. After each time the digestion reagent is added, the beaker will be covered and heated to 140$^{\circ}$C to near dryness. And the sample will be filtered and the beaker will be rinsed. After the second digestion, the sample was heated again to near dryness and 50mL of 10\% HNO$_{3}$ was added to cool the sample down; then the solution was diluted to 100mL using 10\% HNO$_{3}$. \cite{gharaibeh_determination_2010}
-
-Then the lead concentration of the sample was determined by ICP-AES. Unlike in \cite{gharaibeh_determination_2010}, we only collected the air sample in 2h spans not 24h spans, and we need to compare the difference (which might be small) between samples, we need to use a method with higher accuracy and sensitive. Thus we chose ICP-AES instead of AAS. Similar to \cite{gharaibeh_determination_2010}, we also repeated each sample with 3 runs, and an unused air filter was also included (using the same digestion method above) as the blank sample. 
-
-\begin{table}[]
+\begin{wraptable}{r}{0.5\textwidth}
     \centering
-    \begin{tabular}{|c|c|c|}
+    \begin{tabular}[0.3\textwidth]{|c|c|c|}
     \hline
     Step & Digestion Reagent & Rinsing Reagent \\ \hline
     1 & 50mL of aqua regia & 10\% HNO_{3} \\ \hline
     2 & Concentrated HNO_{3} & 10\% HNO_{3} \\ \hline 
     \end{tabular}
-    \caption{Reagents used to digest and rinse the sample according to \cite{gharaibeh_determination_2010}}
+    \caption{\small{Reagents used to digest and rinse the sample according to \cite{gharaibeh_determination_2010}}}
     \label{tab:steps}
-\end{table}
+    \vspace{0.2cm}
+\end{wraptable}
+
+For air samples, we will use methods that are similar to \cite{gharaibeh_determination_2010} and \cite{vijayanand_assessment_2008}. Three high-volume air samplers will be respectively placed in an upwind location of the flight path, underneath the flight path, and in a downwind direction of the flight path. They will collect the air sample at the same time. New filters will be replaced every 2 hours. The whole collection will last about 8 hours and at least 5 position aircraft flyby occurs. 
+
+
+After the air sample is collected, we will use methods similar in \cite{gharaibeh_determination_2010} to digest the samples. A portion of each filter will be cut down into small pieces and placed in a beaker. Three digestion and rinsing will be applied to the sample. Reagents in each step are shown in \textbf{Table} \ref{tab:steps}. After each time the digestion reagent is added, the beaker will be covered and heated to 140$^{\circ}$C to near dryness. And the sample will be filtered and the beaker will be rinsed. After the second digestion, the sample was heated again to near dryness, and 50mL of 10\% HNO$_{3}$ was added to cool the sample down; then the solution was diluted to 100mL using 10\% HNO$_{3}$. \cite{gharaibeh_determination_2010}
+
+
+Then the lead concentration of the sample was determined by ICP-AES. Unlike in \cite{gharaibeh_determination_2010}, we only collected the air sample in 2h spans not 24h spans, and we need to compare the difference (which might be small) between samples, we need to use a method with higher accuracy and sensitive. Thus we chose ICP-AES instead of AAS. Similar to \cite{gharaibeh_determination_2010}, we also repeated each sample with 3 runs, and an unused air filter was also included (using the same digestion method above) as the blank sample. 
+
+
 \subsection{Data Analysis}
+After all the data (ADS-B, wind direction history, and ICP-AES result) are collected, 
 \section{Schedule}
 \begin{center}
 \begin{tabular}{|c|c|c|}
